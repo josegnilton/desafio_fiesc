@@ -1,0 +1,10 @@
+services:
+  db:
+    image: postgres
+    container_name: my-db
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: password
+      POSTGRES_DB: laravel
+    ports:
+      - 5432:5432

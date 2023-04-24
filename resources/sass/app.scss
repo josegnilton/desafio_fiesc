@@ -1,0 +1,30 @@
+// Fonts
+@import url('https://fonts.bunny.net/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import 'bootstrap/scss/bootstrap';
+
+.orange-border {
+    border: 2px solid orange;
+}
+
+.table td,
+.table th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+.navbar-brand-img {
+    max-height: 40px;
+}
+
+.title-dashboard {
+    font-weight: bold;
+}
+
+.bg-gray {
+    background-color: #C0C0C0;
+}
