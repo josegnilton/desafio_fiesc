@@ -7,6 +7,7 @@
 - Composer
 - Bootstrap
 - Jquery
+- EXTRA: Cypress
 
 É necessário ter o composer, docker e php instalados para rodar o projeto.
 
@@ -86,6 +87,25 @@ php artisan serve
     - Comunicação em tempo real pelo backend, para evitar loadings.
     - Assumir tarefas e fluxos de bloqueio caso você não tenha o direito de executar tal ação.
     - Sistema de paginação de tarefas A PARTIR de 7 tarefas.
+
+## Cypress
+
+- Na pasta do cypress é necessário rodar os comandos para instalar, foram feitos testes automatizados SIMPLES devido ao prazo. Obviamente com certo tempo seria possível entregar todo o site testado e com valores dinâmicos.
+- O teste para registrar só irá funcionar uma vez, a partir da primeira vez irá apresentar erro já que o e-mail já existirá na base de dados. É necessário adicionar '.skip' depois do it na linha 7 do desafio_fiesc.cy.js.
+- É necessário ter a aplicação e o banco rodando para que o cypress funcione.
+
+Entre na pasta do cypress e execute 
+
+```bash
+npx cypress open
+```
+caso não rode, use o node para instalar depedências possíveis.
+
+```bash
+npm i
+```
+
+Caso o npx cypress open rode normalmente, selecione e2e testing e o navegador. Depois disso é só executar o arquivo e os testes irão acontecer. A ideia de fazer o cypress é só para demonstrar conhecimento em testes automatizados, um fator bem importante para analistas de qualidade.
 
 ## Aprendizados
 
